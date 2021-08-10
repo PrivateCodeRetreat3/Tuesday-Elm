@@ -7,19 +7,19 @@
 -}
 
 
-module HelloWorld exposing (helloWorld)
+module HelloWorld exposing (helloWorld, countNeighbors, isAliveNextTurn)
 
 -- It's good style to include any types at the top level of your modules.
 
 
 helloWorld : String
 helloWorld =
-    "Please implement this function"
+    "Hello, World!"
 
+countNeighbors: (Int, Int) -> Int
+countNeighbors (x,y) =
+    0
 
-
-{-
-   When you have a working solution, REMOVE ALL THE STOCK COMMENTS.
-   They're here to help you get started but they only clutter a finished solution.
-   If you leave them in, nitpickers will protest!
--}
+isAliveNextTurn: (Bool, Int) -> Bool
+isAliveNextTurn (current, neighbors) =
+    neighbors == 2
