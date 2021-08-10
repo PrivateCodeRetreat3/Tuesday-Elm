@@ -7,7 +7,7 @@
 -}
 
 
-module HelloWorld exposing (helloWorld, countNeighbors, isAliveNextTurn)
+module HelloWorld exposing (..)
 
 -- It's good style to include any types at the top level of your modules.
 
@@ -20,6 +20,6 @@ countNeighbors: (Int, Int) -> Int
 countNeighbors (x,y) =
     0
 
-isAliveNextTurn: (Bool, Int) -> Bool
-isAliveNextTurn (current, neighbors) =
+isAliveNextTurn: Bool -> Int -> Bool
+isAliveNextTurn current neighbors =
     neighbors == 2
